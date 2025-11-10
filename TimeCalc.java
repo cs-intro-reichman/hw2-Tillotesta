@@ -14,7 +14,7 @@ public class TimeCalc {
         String Phours = String.format("%02d", Nhours);
         String Pmin = String.format("%02d", Nmin);
         
-         System.out.println(hours+":"+minutes+" "+minAdd);
+         
          System.out.println(Phours+":"+Pmin);
         
        

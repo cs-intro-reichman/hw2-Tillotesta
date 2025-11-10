@@ -28,7 +28,7 @@ public class Cheers {
                      i++;
                 }
 	   
-                System.out.println("What does it spell?");
+                System.out.println("What does that spell?");
 
                 int j = 0;
                 while (j<n) {
