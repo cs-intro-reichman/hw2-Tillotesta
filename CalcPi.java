@@ -7,7 +7,13 @@ public class CalcPi {
             return;
         }
 	    
-		int n = Integer.parseInt(args[0]);
+		 int n;
+        try {
+            n = Integer.parseInt(args[0]);
+        } catch (NumberFormatException e) {
+            System.err.println("Error: Invalid number.");
+            return;
+        }
 
 		double calc = 0;
 		
