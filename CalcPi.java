@@ -12,7 +12,7 @@ public class CalcPi {
 		double numerator;
 		
 
-		while (i<n) {
+		while (i<n && j<n) {
 			
 			double denominator = (2.0*i + 1);
 			
