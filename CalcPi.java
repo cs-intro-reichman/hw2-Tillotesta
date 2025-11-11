@@ -9,26 +9,18 @@ public class CalcPi {
 	    
 		int n = Integer.parseInt(args[0]);
 
-		int i = 0;
 		double calc = 0;
-		double pi = 0;
-
-		double numerator;
 		
-
-		while (i<n) {
-			
+		for (int i = 0; i < n ; i++) {;
 			double denominator = (2.0*i + 1);
-			
-			if (i % 2 == 0) {
-				numerator = 1.0;
-			} else {
-				numerator = -1.0;
-			}
-
-			calc += numerator / denominator;
-			
-			i++;
+			double numerator = (i % 2 == 0) ? 1.0 : -1.0;
+            calc += numerator / denominator;
 		}
 
-		pi =
+		double pi = calc * 4.0;
+
+		System.out.println("pi according to Java: "+Math.PI);
+		System.out.println("pi, approximated:     "+pi);
+
+	}
+}
