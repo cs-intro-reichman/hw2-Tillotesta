@@ -1,22 +1,22 @@
 // Computes an approximation of PI.
 public class CalcPi {
 	public static void main(String [] args) { 
+
+		if (args.length == 0) {
+            System.err.println("Error: Please provide the number of terms.");
+            return;
+        }
 	    
 		int n = Integer.parseInt(args[0]);
 
-		if (args.length == 0) {
-   
-    	return;
-
 		int i = 0;
-		int j = 0;
 		double calc = 0;
 		double pi = 0;
 
 		double numerator;
 		
 
-		while (i<n && j<n) {
+		while (i<n) {
 			
 			double denominator = (2.0*i + 1);
 			
@@ -28,14 +28,7 @@ public class CalcPi {
 
 			calc += numerator / denominator;
 			
-			j++;
 			i++;
 		}
 
-		pi = calc * 4.0;
-
-		System.out.println("pi according to Java: "+Math.PI);
-		System.out.println("pi, approximated:     "+pi);
-
-	}
-}
+		pi =
