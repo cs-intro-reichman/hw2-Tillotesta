@@ -15,19 +15,19 @@ public class CalcPi {
             return;
         }
 
-        double calc = 0;
+        double calc = 0.0; 
         
-        for (int i = 0; i < n; i++) {
-            double denominator = (2.0 * i + 1);
+        for (int i = 0; i < n ; i++) {
+            double denominator = (2.0 * i + 1.0); 
             double numerator = (i % 2 == 0) ? 1.0 : -1.0;
             calc += numerator / denominator;
         }
 
         double pi = calc * 4.0;
 
+       
         System.out.println("pi according to Java: " + Math.PI);
-        System.out.flush();
-        System.out.println("pi, approximated:     " + pi);
-        System.out.flush();
+        System.out.println("pi, approximated:     " + pi); 
+
     }
 }
