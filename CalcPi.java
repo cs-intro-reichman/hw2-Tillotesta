@@ -11,7 +11,7 @@ public class CalcPi {
 
 		double calc = 0;
 		
-		for (int i = 0; i < n ; i++) {;
+		for (int i = 0; i < n ; i++) {
 			double denominator = (2.0*i + 1);
 			double numerator = (i % 2 == 0) ? 1.0 : -1.0;
             calc += numerator / denominator;
@@ -19,8 +19,8 @@ public class CalcPi {
 
 		double pi = calc * 4.0;
 
-		System.out.println("pi according to Java: "+Math.PI);
-		System.out.println("pi, approximated:     "+pi);
+		System.out.println("pi according to Java: "+ Math.PI);
+		System.out.println("pi, approximated:     " + pi);
 
 	}
 }
