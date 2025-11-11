@@ -4,6 +4,10 @@ public class CalcPi {
 	    
 		int n = Integer.parseInt(args[0]);
 
+		if (args.length == 0) {
+   
+    	return;
+
 		int i = 0;
 		int j = 0;
 		double calc = 0;
