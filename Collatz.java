@@ -10,37 +10,32 @@ public class Collatz {
 			System.out.println("Every one of the first " + seed + " hailstone sequences reached 1.");
 		}
 		
-
 		if (mode.equals("v")) {
 
-			for (int s = 1; s <= 1; s++) {
-				StringBuilder sequence = new StringBuilder();
-				int i = 1;
-				while (i <= seed) {
-				
-					while (seed != 1) {
-				
-						if (seed % 2 == 0) {
-							seed = seed / 2;
+			int i = 1;
 
-						} else {
-							seed = (seed*3) + 1;
-						}
-
-					sequence.append(seed).append(" ");	
+			while (i <= k) {
+				int steps = i;
+				System.out.println(i);
 				
-					i++;
-					}
-
-					System.out.println(sequence+" ");
+				while (i != 1) {
 				
-				}	
+					if (i % 2 == 0) {
+						i = i / 2;
+
+					} else {
+							i = (i*3) + 1;						}
+
+					System.out.println(" "+i);
+					steps++;
+				}
+				System.out.println(i+" "+seed);
+				i++;
+				System.out.println(" ("+steps+") ");
+			}	
 			
-					System.out.println("Every one of the first " + k + " hailstone sequences reached 1.");
-			}
+			System.out.println("Every one of the first " + k + " hailstone sequences reached 1.");
 		}
-
-		
-
 	}
 }
+
