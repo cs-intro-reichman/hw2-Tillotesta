@@ -1,8 +1,6 @@
 //feedback
 
-/*
-Great work boaz!
-*/
+// very clean good!
 
 
 // Prints a crowd cheering output.

@@ -1,3 +1,7 @@
+/*Feedback:
+very clean and readable work 
+nice use of try catch:)
+ */
 // Computes an approximation of PI.
 public class CalcPi {
     public static void main(String [] args) { 
